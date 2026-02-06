@@ -4706,7 +4706,7 @@ button:focus {
 @media (max-width: 991px) {
   .sticky {
     position: sticky !important;
-    top: 50px !important;
+    top: -140px !important;
   }
 }
 
