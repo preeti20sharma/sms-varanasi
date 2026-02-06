@@ -15,7 +15,7 @@
         <!-- favicon icon -->
         <link rel="shortcut icon" href="assets/images/logo/logo.png"
             type="image/x-icon">
-        <link rel="icon" href="assets/images/logo/acl-logo.png"
+        <link rel="icon" href="assets/images/logo/logo.png"
             type="image/x-icon">
         <!-- font awesome css -->
         <link rel="stylesheet" href="assets/css/all.min.css">
@@ -259,15 +259,30 @@
             <!-- main start -->
             <main class="main ">
                 <!-- hero section start -->
-                <div class="ue-hero-section"
-                    style="background-image: url('assets/images/sms/bgg.webp');">
+                <div class="ue-hero-section">
+                    <!-- BACKGROUND CAROUSEL -->
+                    <div id="ueHeroCarousel"
+                        class="carousel slide carousel-fade"
+                        data-bs-ride="carousel" data-bs-interval="4000">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"
+                                style="background-image:url('assets/images/sms/banner5.jpg')"></div>
+
+                            <div class="carousel-item"
+                                style="background-image:url('assets/images/sms/banner3.jpg')"></div>
+
+                            <div class="carousel-item"
+                                style="background-image:url('assets/images/sms/banner6.jpg')"></div>
+                        </div>
+                    </div>
+                    <!-- OVERLAY -->
                     <div class="ue-hero-overlay"></div>
+                    <!-- FIXED CONTENT -->
                     <div class="ue-hero-wrapper">
                         <!-- LEFT CONTENT -->
                         <div class="ue-hero-left">
                             <h1 class="ue-hero-title">
-                                Top Ranked Professional & Management
-                                <br />
+                                Top Ranked Professional & Management <br />
                                 <span class="ue-hero-highlight">Education in
                                     Varanasi</span>
                             </h1>
@@ -279,74 +294,69 @@
                                 Commerce fields.
                             </p>
                             <div class="ue-hero-stats">
-                                <div class="ue-stat-item mt-2"><b>NAAC ‘A Grade’
-                                        Accredited
-                                    </b>
-                                </div><br />
+                                <div class="ue-stat-item"><b>NAAC ‘A Grade’
+                                        Accredited</b></div>
                                 <div class="ue-stat-item"><b>One of the Top 50
-                                        B-Schools in India</b>
-                                </div><br />
+                                        B-Schools in India</b></div>
                                 <div class="ue-stat-item"><b>30+ Years of
-                                        Academic Excellence
-                                    </b>
-                                </div>
+                                        Academic Excellence</b></div>
                             </div>
-
                             <div class="ue-hero-actions">
                                 <a href="#" data-bs-toggle="modal"
                                     data-bs-target="#virtualTourModal"
                                     data-bs-dismiss="modal">
                                     <button class="ue-btn-outline">Download
-                                        Brochure
-                                    </button>
+                                        Brochure</button>
                                 </a>
                                 <a href="#" data-bs-toggle="modal"
                                     data-bs-target="#virtualTourModal"
                                     data-bs-dismiss="modal">
-                                    <button class="ue-btn-primary">Apply Now
-                                    </button>
+                                    <button class="ue-btn-primary">Apply
+                                        Now</button>
                                 </a>
                             </div>
                         </div>
 
                         <!-- RIGHT FORM -->
                         <div class="ue-hero-form-box d-none d-lg-block">
-                            <h3 class="ue-form-title">Get in Touch with
-                                Us:</h3>
+                            <h3 class="ue-form-title">Get in Touch with Us:</h3>
                             <form class="ue-lead-form">
-                                <input
-                                    type="text"
-                                    class="ue-form-input"
-                                    placeholder="Enter Your Full Name"
-                                    required />
-                                <input
-                                    type="email"
-                                    class="ue-form-input"
-                                    placeholder="Enter Your Email"
-                                    required />
-                                <input
-                                    type="tel"
-                                    class="ue-form-input"
-                                    placeholder="Enter Your Mobile Number"
-                                    required />
-                                <label class="ue-form-checkbox">
+                                <input type="text" class="ue-form-input"
+                                    placeholder="Full Name" required>
+                                <input type="email" class="ue-form-input"
+                                    placeholder="Email" required>
+                                <input type="tel" class="ue-form-input"
+                                    placeholder="Mobile Number" required>
+                                <select class="ue-form-input" required>
+                                    <option value>Select Program</option>
+                                    <option>BA (Hons) Mass
+                                        Communication</option>
+                                    <option>B.Com (Hons)</option>
+                                    <option>MCA</option>
+                                    <option>M.Com</option>
+                                    <option>BCA</option>
+                                </select>
+                                <div
+                                    class="lead-form-checkbox">
                                     <input type="checkbox"
-                                        class="ue-checkbox-input"
+                                        id="agree"
                                         required />
-                                    <span class="ue-checkbox-text">
-                                        I agree to the Privacy Policy and
-                                        Terms of Services.
-                                    </span>
-                                </label>
-                                <button type="submit"
-                                    class="ue-btn-primary ue-btn-block">
-                                    Submit
-                                </button>
+                                    <label for="agree">
+                                        I consent to receive calls, SMS, emails,
+                                        or WhatsApp messages about products and
+                                        offers, overriding DNC/NDNC
+                                        registration.
+                                    </label>
+                                </div>
+                                <button
+                                    class="ue-btn-primary ue-btn-block">Submit</button>
                             </form>
                         </div>
                     </div>
                 </div>
+                <!-- hero section end -->
 
+                <!-- about-content -->
                 <div class="content-part">
                     <div class="container">
                         <div class="row">
@@ -371,6 +381,87 @@
                         </div>
                     </div>
                 </div>
+                <!-- about-content -->
+
+                <!-- mobile view form 2 -->
+                <div class="lead-form-wrapper mt-4 d-block d-md-none m-2">
+                    <h3
+                        class="lead-form-title text-center">Get
+                        in
+                        Touch with Us</h3>
+                    <form class="lead-form">
+                        <div
+                            class="lead-form-group">
+                            <input type="text"
+                                class="lead-form-input"
+                                placeholder="Enter Your Full Name"
+                                required />
+                        </div>
+
+                        <div
+                            class="lead-form-group">
+                            <input type="email"
+                                class="lead-form-input"
+                                placeholder="Enter Your Email"
+                                required />
+                        </div>
+
+                        <div
+                            class="lead-form-group">
+                            <input type="tel"
+                                class="lead-form-input"
+                                placeholder="Enter Your Mobile Number"
+                                required />
+                        </div>
+                        <div
+                            class="lead-form-group">
+                            <select
+                                name="program"
+                                class="lead-form-input-select"
+                                required>
+                                <option
+                                    value>Select
+                                    Program</option>
+                                <option>BA
+                                    (Hons)
+                                    Mass
+                                    Communication</option>
+                                <option>B.Com
+                                    (Hons)</option>
+                                <option>MCA</option>
+                                <option>M.Com</option>
+                                <option>BCA</option>
+                            </select>
+                        </div>
+
+                        <div
+                            class="lead-form-checkbox">
+                            <input type="checkbox"
+                                id="agree"
+                                required />
+                            <label for="agree">
+                                I authorize company
+                                representatives to
+                                Call,
+                                SMS, Email or
+                                WhatsApp
+                                me about its
+                                products
+                                and offers. This
+                                consent
+                                overrides any
+                                registration for
+                                DNC/NDNC.
+                            </label>
+                        </div>
+
+                        <button type="submit"
+                            class="lead-btn-primary">
+                            Submit
+                        </button>
+                    </form>
+                </div>
+                <!-- mobile view end form 2 -->
 
                 <!-- program -->
                 <section
@@ -772,8 +863,8 @@
                                     <div
                                         class="info-card card-one wow fadeInUp">
                                         <span
-                                            class="card-pill">Performance-Based
-                                            CPL</span>
+                                            class="card-pill">Skill-to-Career
+                                            Learning Approach</span>
                                         <div class="card-icon">
                                             <i class="fa fa-user"></i>
                                         </div>
@@ -798,8 +889,8 @@
                                 <div class="col-md-6">
                                     <div
                                         class="info-card card-two wow fadeInUp">
-                                        <span class="card-pill">Full-Service
-                                            Retainership</span>
+                                        <span class="card-pill">Career-Ready
+                                            Learning</span>
                                         <div class="card-icon">
                                             <i class="fa fa-users"></i>
                                         </div>
@@ -827,8 +918,8 @@
                                     <div
                                         class="info-card card-one wow fadeInUp">
                                         <span
-                                            class="card-pill">Performance-Based
-                                            CPL</span>
+                                            class="card-pill">Outcome-Driven
+                                            Learning</span>
                                         <div class="card-icon">
                                             <i class="fa fa-user"></i>
                                         </div>
@@ -854,8 +945,8 @@
                                 <div class="col-md-6">
                                     <div
                                         class="info-card card-two wow fadeInUp">
-                                        <span class="card-pill">Full-Service
-                                            Retainership</span>
+                                        <span class="card-pill">Career-Ready
+                                            Learning</span>
                                         <div class="card-icon">
                                             <i class="fa fa-users"></i>
                                         </div>
@@ -912,14 +1003,24 @@
                                             </p>
                                             <div
                                                 class="hero-buttons card-buttons ">
-                                                <button
-                                                    class="btn-outline">Get
-                                                    Brochure
-                                                </button>
-                                                <button
-                                                    class="btn-fill">Build
-                                                    Apply Now
-                                                </button>
+                                                <a href="#"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#virtualTourModal"
+                                                    data-bs-dismiss="modal">
+                                                    <button
+                                                        class="btn-outline">Get
+                                                        Brochure
+                                                    </button>
+                                                </a>
+                                                <a href="#"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#virtualTourModal"
+                                                    data-bs-dismiss="modal">
+                                                    <button
+                                                        class="btn-fill">
+                                                        Apply Now
+                                                    </button>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -1129,23 +1230,23 @@
                                                 class="accordion-item">
                                                 <h2
                                                     class="accordion-header"
-                                                    id="headingThree">
+                                                    id="headingFour">
                                                     <button
                                                         class="accordion-button collapsed"
                                                         type="button"
                                                         data-bs-toggle="collapse"
-                                                        data-bs-target="#collapseThree"
+                                                        data-bs-target="#collapseFour"
                                                         aria-expanded="false"
-                                                        aria-controls="collapseThree">
+                                                        aria-controls="collapseFour">
                                                         Is SMS Varanasi good
                                                         for
                                                         MBA?
                                                     </button>
                                                 </h2>
                                                 <div
-                                                    id="collapseThree"
+                                                    id="collapseFour"
                                                     class="accordion-collapse collapse"
-                                                    aria-labelledby="headingThree"
+                                                    aria-labelledby="headingFour"
                                                     data-bs-parent="#accordionExample">
                                                     <div
                                                         class="accordion-body">
@@ -1245,6 +1346,26 @@
                                                         placeholder="Enter Your Mobile Number"
                                                         required />
                                                 </div>
+                                                <div
+                                                    class="lead-form-group">
+                                                    <select
+                                                        name="program"
+                                                        class="lead-form-input-select"
+                                                        required>
+                                                        <option
+                                                            value>Select
+                                                            Program</option>
+                                                        <option>BA
+                                                            (Hons)
+                                                            Mass
+                                                            Communication</option>
+                                                        <option>B.Com
+                                                            (Hons)</option>
+                                                        <option>MCA</option>
+                                                        <option>M.Com</option>
+                                                        <option>BCA</option>
+                                                    </select>
+                                                </div>
 
                                                 <div
                                                     class="lead-form-checkbox">
@@ -1278,9 +1399,11 @@
                             </div>
                         </section>
                         <!-- faq section end -->
+
                     </main>
                     <!-- main end -->
 
+                    <!-- modal form -->
                     <div class="modal fade" id="virtualTourModal"
                         tabindex="-1"
                         role="dialog"
@@ -1318,7 +1441,7 @@
                                                 class="rts-application-form">
                                                 <div
                                                     class="rts-application-form-content"
-                                                    style="box-shadow: none!important;padding: 14px 20px 28px 20px!important;">
+                                                    style="box-shadow: none!important;padding: 14px 9px 28px 9px!important;">
                                                     <h5
                                                         class="newsletter-title  mb--25 text-center">Get
                                                         In Touch With Us :
@@ -1405,18 +1528,20 @@
                             <div class="footer-section-overlay"
                                 data-img-src="assets/images/avatar/shapes.svg"></div>
                             <div class="container">
-                                <p>Disclaimer - The content provided on this
-                                    website is for information purposes only
-                                    and
-                                    does not constitute an offer to avail
-                                    any
-                                    service. The prices mentioned are
-                                    subject to
-                                    change without prior notice, and the
-                                    availability of properties mentioned is
-                                    not
-                                    guaranteed.
+                                <p>Disclaimer : Marketed By - Authorised Channel
+                                    Partner | This is not the official website
+                                    of developer property, it belongs to
+                                    authorised channel partners for information
+                                    purposes only. Thank you for visiting our
+                                    website. This disclaimer ("Disclaimer") is
+                                    applicable to this website and all
+                                    microsites and websites owned by us. By
+                                    using or accessing this website you agree
+                                    with the Disclaimer without any
+                                    qualification or limitation.
                                 </p>
+                                <p class="text-center">© 2026 All rights
+                                    reserved.</p>
                             </div>
                         </div>
                     </footer>
