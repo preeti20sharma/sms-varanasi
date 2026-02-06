@@ -31,8 +31,8 @@ async function handleFormSubmit(formId) {
       ? form.querySelector('[name="City"]').value.trim()
       : "";
 
-    const email = form.querySelector('[name="email"]')
-      ? form.querySelector('[name="email"]').value.trim()
+    const ef_email = form.querySelector('[name="ef_email"]')
+      ? form.querySelector('[name="ef_email"]').value.trim()
       : "";
 
     const ef_course = form.querySelector('[name="ef_course"]')
@@ -45,7 +45,7 @@ async function handleFormSubmit(formId) {
     if (!name) missingFields.push("Name");
     if (!phone) missingFields.push("Phone");
     if (!city) missingFields.push("City");
-    if (!email) missingFields.push("email");
+    if (!ef_email) missingFields.push("ef_email");
     if (!ef_course) missingFields.push("ef_course");
 
     if (missingFields.length > 0) {
@@ -79,11 +79,12 @@ async function handleFormSubmit(formId) {
       name: name,
       mobile: phone,
       city: city,
-      email: email,
+      ef_email: ef_email,
       ef_course: ef_course,
       doc_url: document.URL,
       doc_ref: document.referrer,
     };
+    console.log(payload);
 
     const apiUrl = "https://api.aajneetiadvertising.com/lead/save";
 
