@@ -31,6 +31,10 @@ async function handleFormSubmit(formId) {
       ? form.querySelector('[name="City"]').value.trim()
       : "";
 
+    const email = form.querySelector('[name="email"]')
+      ? form.querySelector('[name="email"]').value.trim()
+      : "";
+
     const ef_course = form.querySelector('[name="ef_course"]')
       ? form.querySelector('[name="ef_course"]').value.trim()
       : "";
@@ -41,6 +45,7 @@ async function handleFormSubmit(formId) {
     if (!name) missingFields.push("Name");
     if (!phone) missingFields.push("Phone");
     if (!city) missingFields.push("City");
+    if (!email) missingFields.push("email");
     if (!ef_course) missingFields.push("ef_course");
 
     if (missingFields.length > 0) {
@@ -69,11 +74,12 @@ async function handleFormSubmit(formId) {
     }
 
     const payload = {
-      page_url: "https://coursenest.co.in/",
-      project_name: "coursenest",
+      page_url: "",
+      project_name: "SMS Varanasi",
       name: name,
       mobile: phone,
       city: city,
+      email: email,
       ef_course: ef_course,
       doc_url: document.URL,
       doc_ref: document.referrer,
@@ -118,3 +124,5 @@ async function handleFormSubmit(formId) {
 // Initialize forms
 handleFormSubmit("ajax-header-contact"); // First form
 handleFormSubmit("ajax-header-contact-2"); // Second form
+handleFormSubmit("ajax-header-contact-3"); // third form
+handleFormSubmit("ajax-header-contact-4"); // fourth form

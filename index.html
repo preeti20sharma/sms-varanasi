@@ -322,21 +322,35 @@
                         <!-- RIGHT FORM -->
                         <div class="ue-hero-form-box d-none d-lg-block">
                             <h3 class="ue-form-title">Get in Touch with Us:</h3>
-                            <form class="ue-lead-form">
+                            <form class="ue-lead-form" id="ajax-header-contact">
                                 <input type="text" class="ue-form-input"
-                                    placeholder="Full Name" required>
+                                    name="name1"
+                                    placeholder="Your Full Name" required>
+
                                 <input type="email" class="ue-form-input"
-                                    placeholder="Email" required>
+                                    name="email"
+                                    placeholder="Your Email" required>
+
                                 <input type="tel" class="ue-form-input"
-                                    placeholder="Mobile Number" required>
-                                <select class="ue-form-input" required>
-                                    <option value>Select Program</option>
-                                    <option>BA (Hons) Mass
+                                    name="phone"
+                                    placeholder="Your Mobile Number" required>
+
+                                <input type="text" class="ue-form-input"
+                                    name="City"
+                                    placeholder="Enter Your City" required>
+
+                                <select class="ue-form-input" name="ef_course"
+                                    required>
+                                    <option>Select
+                                        Program</option>
+                                    <option value="BA">BA (Hons) Mass
                                         Communication</option>
-                                    <option>B.Com (Hons)</option>
-                                    <option>MCA</option>
-                                    <option>M.Com</option>
-                                    <option>BCA</option>
+                                    <option value="B.Com">B.Com (Hons)</option>
+                                    <option value="MBA">MBA</option>
+                                    <option value="M.Com">M.Com</option>
+                                    <option value="BBA">BBA</option>
+                                    <option value="BCA">BCA</option>
+                                    <option value="MCA">MCA</option>
                                 </select>
                                 <div
                                     class="lead-form-checkbox">
@@ -344,10 +358,8 @@
                                         id="agree"
                                         required />
                                     <label for="agree">
-                                        I consent to receive calls, SMS, emails,
-                                        or WhatsApp messages about products and
-                                        offers, overriding DNC/NDNC
-                                        registration.
+                                        I agree to the Terms & Conditions and
+                                        Privacy Policy.
                                     </label>
                                 </div>
                                 <button
@@ -391,11 +403,12 @@
                         class="lead-form-title text-center">Get
                         in
                         Touch with Us</h3>
-                    <form class="lead-form">
+                    <form class="lead-form" id="ajax-header-contact-2">
                         <div
                             class="lead-form-group">
                             <input type="text"
                                 class="lead-form-input"
+                                name="name1"
                                 placeholder="Enter Your Full Name"
                                 required />
                         </div>
@@ -404,6 +417,7 @@
                             class="lead-form-group">
                             <input type="email"
                                 class="lead-form-input"
+                                name="email"
                                 placeholder="Enter Your Email"
                                 required />
                         </div>
@@ -412,30 +426,37 @@
                             class="lead-form-group">
                             <input type="tel"
                                 class="lead-form-input"
+                                name="phone"
                                 placeholder="Enter Your Mobile Number"
+                                required />
+                        </div>
+                        <div
+                            class="lead-form-group">
+                            <input type="text"
+                                class="lead-form-input"
+                                name="City"
+                                placeholder="Enter Your City"
                                 required />
                         </div>
                         <div
                             class="lead-form-group">
                             <select
                                 name="program"
-                                class="lead-form-input-select"
+                                class="lead-form-input-select" name="ef_course"
                                 required>
                                 <option
                                     value>Select
                                     Program</option>
-                                <option>BA
-                                    (Hons)
-                                    Mass
+                                <option value="BA">BA (Hons) Mass
                                     Communication</option>
-                                <option>B.Com
-                                    (Hons)</option>
-                                <option>MCA</option>
-                                <option>M.Com</option>
-                                <option>BCA</option>
+                                <option value="B.Com">B.Com (Hons)</option>
+                                <option value="MBA">MBA</option>
+                                <option value="M.Com">M.Com</option>
+                                <option value="BBA">BBA</option>
+                                <option value="BCA">BCA</option>
+                                <option value="MCA">MCA</option>
                             </select>
                         </div>
-
                         <div
                             class="lead-form-checkbox">
                             <input type="checkbox"
@@ -1324,11 +1345,13 @@
                                                 in
                                                 Touch with Us</h3>
 
-                                            <form class="lead-form">
+                                            <form class="lead-form"
+                                                id="ajax-header-contact-3">
                                                 <div
                                                     class="lead-form-group">
                                                     <input type="text"
                                                         class="lead-form-input"
+                                                        name="name1"
                                                         placeholder="Enter Your Full Name"
                                                         required />
                                                 </div>
@@ -1337,6 +1360,7 @@
                                                     class="lead-form-group">
                                                     <input type="email"
                                                         class="lead-form-input"
+                                                        name="email"
                                                         placeholder="Enter Your Email"
                                                         required />
                                                 </div>
@@ -1345,27 +1369,42 @@
                                                     class="lead-form-group">
                                                     <input type="tel"
                                                         class="lead-form-input"
+                                                        name="phone"
                                                         placeholder="Enter Your Mobile Number"
                                                         required />
                                                 </div>
                                                 <div
                                                     class="lead-form-group">
+                                                    <input type="text"
+                                                        class="lead-form-input"
+                                                        name="City"
+                                                        placeholder="Enter Your City"
+                                                        required />
+                                                </div>
+                                                <div
+                                                    class="lead-form-group">
                                                     <select
-                                                        name="program"
+                                                        name="ef_course"
                                                         class="lead-form-input-select"
                                                         required>
-                                                        <option
-                                                            value>Select
+                                                        <option>Select
                                                             Program</option>
-                                                        <option>BA
-                                                            (Hons)
-                                                            Mass
+                                                        <option value="BA">BA
+                                                            (Hons) Mass
                                                             Communication</option>
-                                                        <option>B.Com
+                                                        <option
+                                                            value="B.Com">B.Com
                                                             (Hons)</option>
-                                                        <option>MCA</option>
-                                                        <option>M.Com</option>
-                                                        <option>BCA</option>
+                                                        <option
+                                                            value="MBA">MBA</option>
+                                                        <option
+                                                            value="M.Com">M.Com</option>
+                                                        <option
+                                                            value="BBA">BBA</option>
+                                                        <option
+                                                            value="BCA">BCA</option>
+                                                        <option
+                                                            value="MCA">MCA</option>
                                                     </select>
                                                 </div>
 
@@ -1401,7 +1440,6 @@
                             </div>
                         </section>
                         <!-- faq section end -->
-
                     </main>
                     <!-- main end -->
 
@@ -1451,12 +1489,11 @@
                                                     <form
                                                         id="ajax-header-contact-4"
                                                         class="rts-form light-modal-form">
-
                                                         <div
                                                             class="form-group">
                                                             <input
                                                                 type="text"
-                                                                name="name"
+                                                                name="name1"
                                                                 placeholder="Enter Your Full Name"
                                                                 required>
                                                         </div>
@@ -1465,7 +1502,7 @@
                                                             class="form-group">
                                                             <input
                                                                 type="tel"
-                                                                name="mobile"
+                                                                name="phone"
                                                                 placeholder="Enter Mobile Number"
                                                                 required>
                                                         </div>
@@ -1481,24 +1518,39 @@
 
                                                         <div
                                                             class="form-group">
-                                                            <select
-                                                                name="program"
+                                                            <input
+                                                                type="text"
+                                                                name="City"
+                                                                placeholder="Enter Your City"
                                                                 required>
-                                                                <option
-                                                                    value>Select
-                                                                    Program</option>
-                                                                <option>BA
-                                                                    (Hons)
-                                                                    Mass
-                                                                    Communication</option>
-                                                                <option>B.Com
-                                                                    (Hons)</option>
-                                                                <option>MCA</option>
-                                                                <option>M.Com</option>
-                                                                <option>BCA</option>
-                                                            </select>
                                                         </div>
 
+                                                        <div
+                                                            class="form-group">
+                                                            <select
+                                                                name="ef_course"
+                                                                required>
+                                                                <option>Select
+                                                                    Program</option>
+                                                                <option
+                                                                    value="BA">BA
+                                                                    (Hons) Mass
+                                                                    Communication</option>
+                                                                <option
+                                                                    value="B.Com">B.Com
+                                                                    (Hons)</option>
+                                                                <option
+                                                                    value="MBA">MBA</option>
+                                                                <option
+                                                                    value="M.Com">M.Com</option>
+                                                                <option
+                                                                    value="BBA">BBA</option>
+                                                                <option
+                                                                    value="BCA">BCA</option>
+                                                                <option
+                                                                    value="MCA">MCA</option>
+                                                            </select>
+                                                        </div>
                                                         <button
                                                             type="submit"
                                                             class="light-modal-btn">
