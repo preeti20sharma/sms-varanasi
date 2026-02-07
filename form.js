@@ -74,7 +74,7 @@ async function handleFormSubmit(formId) {
     }
 
     const payload = {
-      page_url: "",
+      page_url: "https://smsvaranasi.org/",
       project_name: "SMS Varanasi",
       name: name,
       mobile: phone,
