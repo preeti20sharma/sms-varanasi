@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WJTGCGJJ');</script>
+        <!-- End Google Tag Manager -->
         <!-- meta tags -->
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -34,8 +42,15 @@
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     </head>
     <body>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe
+                src="https://www.googletagmanager.com/ns.html?id=GTM-WJTGCGJJ"
+                height="0" width="0"
+                style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
         <!-- page wrapper start -->
         <div class="page-wrapper">
             <!-- back to top start -->
@@ -307,15 +322,17 @@
                             <div class="ue-hero-actions">
                                 <a href="#" data-bs-toggle="modal"
                                     data-bs-target="#virtualTourModal"
-                                    data-bs-dismiss="modal">
+                                    data-bs-dismiss="modal"
+                                    data-title="Download Brochure">
                                     <button class="ue-btn-outline">Download
                                         Brochure</button>
                                 </a>
                                 <a href="#" data-bs-toggle="modal"
                                     data-bs-target="#virtualTourModal"
-                                    data-bs-dismiss="modal">
-                                    <button class="ue-btn-primary">Apply
-                                        Now</button>
+                                    data-bs-dismiss="modal"
+                                    data-title="Admission Enquiry">
+                                    <button class="ue-btn-primary">Admission
+                                        Enquiry</button>
                                 </a>
                             </div>
                         </div>
@@ -930,6 +947,7 @@
                                         <a href="#" data-bs-toggle="modal"
                                             data-bs-target="#virtualTourModal"
                                             data-bs-dismiss="modal"
+                                            data-title="Download Brochure"
                                             class="theme-button style-1">
                                             Get Brochure
                                         </a>
@@ -1200,19 +1218,21 @@
                                                 <a href="#"
                                                     data-bs-toggle="modal"
                                                     data-bs-target="#virtualTourModal"
-                                                    data-bs-dismiss="modal">
+                                                    data-bs-dismiss="modal"
+                                                    data-title="Download Brochure">
                                                     <button
-                                                        class="btn-outline">Get
+                                                        class="btn-outline">Download
                                                         Brochure
                                                     </button>
                                                 </a>
                                                 <a href="#"
                                                     data-bs-toggle="modal"
                                                     data-bs-target="#virtualTourModal"
-                                                    data-bs-dismiss="modal">
+                                                    data-bs-dismiss="modal"
+                                                    data-title="Admission Enquiry">
                                                     <button
                                                         class="btn-fill">
-                                                        Apply Now
+                                                        Admission Enquiry
                                                     </button>
                                                 </a>
                                             </div>
@@ -1600,10 +1620,9 @@
                                                         DNC/NDNC.
                                                     </label>
                                                 </div>
-
                                                 <button type="submit"
                                                     class="lead-btn-primary">
-                                                    Submit
+                                                    Submit Now
                                                 </button>
                                             </form>
                                         </div>
@@ -1635,14 +1654,14 @@
                                     </button>
                                 </div>
                                 <!-- Modal Body -->
-                                <div class="modal-body py-4">
-                                    <div class="row g-4 align-items-center">
+                                <div class="modal-body ">
+                                    <div class="row  align-items-center g-2">
 
                                         <!-- Left Side Image -->
                                         <div
                                             class="col-md-6 d-none d-md-block">
                                             <img
-                                                src="assets/images/sms/bgg.webp"
+                                                src="assets/images/sms/smsform.png"
                                                 alt="Brochure Image"
                                                 class="img-fluid modal-Img ">
                                         </div>
@@ -1650,12 +1669,13 @@
                                         <!-- Right Side Form -->
                                         <div class="col-md-6">
                                             <div
-                                                class="rts-application-form">
+                                                class="rts-application-form ue-dark-popup ">
                                                 <div
                                                     class="rts-application-form-content"
                                                     style="box-shadow: none!important;padding: 14px 9px 28px 9px!important;">
                                                     <h5
-                                                        class="newsletter-title  mb--25 text-center">Get
+                                                        class="newsletter-title  mb--25 text-center"
+                                                        id="modalFormTitle">Get
                                                         In Touch With Us :
                                                     </h5>
                                                     <form
@@ -1726,8 +1746,7 @@
                                                         <button
                                                             type="submit"
                                                             class="light-modal-btn">
-                                                            Get Free
-                                                            Consultaion!
+                                                            Submit Now
                                                         </button>
                                                     </form>
                                                 </div>
@@ -1798,5 +1817,17 @@
             }, 3000);
         })
     </script>
+                <script>
+  const modal = document.getElementById('virtualTourModal');
+  const modalTitle = document.getElementById('modalFormTitle');
+
+  modal.addEventListener('show.bs.modal', function (event) {
+    const trigger = event.relatedTarget;
+    const title = trigger.getAttribute('data-title');
+
+    modalTitle.textContent = title ? title : 'Get In Touch With Us';
+  });
+</script>
+
             </body>
         </html>

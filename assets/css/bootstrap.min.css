@@ -6301,7 +6301,7 @@ fieldset:disabled .btn {
 .modal-body {
     position: relative;
     flex: 1 1 auto;
-    padding: var(--bs-modal-padding)
+    /* padding: var(--bs-modal-padding) */
 }
 
 .modal-footer {

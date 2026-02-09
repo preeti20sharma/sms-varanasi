@@ -18984,99 +18984,6 @@ li i {
 /* COMPACT BLUE MODAL FORM */
 /* ================================= */
 
-.light-modal-form {
-  background: #ffffff;
-}
-
-/* Compact spacing */
-.light-modal-form .form-group {
-  margin-bottom: 10px;
-}
-
-/* Inputs & Select */
-.light-modal-form input,
-.light-modal-form select {
-  width: 100%;
-  height: 38px;
-  padding: 8px 12px;
-  font-size: 13.5px;
-  border-radius: 6px;
-  background: #f4f7fb;
-  border: 1px solid #cdd8e6;
-  color: #0F1B2D;
-  transition: all 0.25s ease;
-}
-
-/* Placeholder */
-.light-modal-form input::placeholder {
-  color: #0F1B2D !important;
-}
-
-/* Focus state */
-.light-modal-form input:focus,
-.light-modal-form select:focus {
-  outline: none;
-  border-color: #1e5eff;
-  background: #ffffff;
-  box-shadow: 0 0 0 2px rgba(30, 94, 255, 0.12);
-}
-
-/* Button */
-.light-modal-btn {
-  width: 100%;
-  height: 40px;
-  border-radius: 6px;
-  border: none;
-  background: #0F1B2D;
-  color: #ffffff;
-  font-size: 14px;
-  font-weight: 600;
-  margin-top: 6px;
-  cursor: pointer;
-  transition: all 0.25s ease;
-}
-
-.light-modal-btn:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 6px 18px rgba(30, 94, 255, 0.35);
-}
-
-/* Title */
-.newsletter-title {
-  font-size: 17px;
-  font-weight: 600;
-  color: #0f1b2d;
-  margin-bottom: 12px;
-}
-
-/* Modal body compact */
-.modal-body {
-  padding: 18px !important;
-}
-
-/* Form wrapper padding reduce */
-.rts-application-form-content {
-  padding: 10px 14px 14px 14px !important;
-  box-shadow: none !important;
-}
-
-/* Image compact */
-.modal-Img {
-  height: 320px;
-  border-radius: 10px;
-  object-fit: cover;
-}
-
-/* Mobile */
-@media (max-width: 576px) {
-  .modal-Img {
-    display: none;
-  }
-
-  .modal-body {
-    padding: 14px !important;
-  }
-}
 
 /* HERO BASE */
 .ue-hero-section {
@@ -19175,4 +19082,108 @@ li i {
   .ue-hero-wrapper {
     padding: 0 15px;
   }
+}
+
+/* ===============================
+   Dark Blue Popup Form (Isolated)
+================================= */
+
+.ue-dark-popup {
+  background: #0b1c2d;
+  /* dark navy */
+  padding: 10px 15px;
+  margin-left: 4px;
+  /* border-radius: 6px; */
+}
+
+
+/* Heading */
+.ue-dark-popup .newsletter-title {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.ue-dark-popup .newsletter-title::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  background: #f5c542;
+  /* yellow accent */
+  margin: 10px auto 0;
+}
+
+/* Form groups */
+.ue-dark-popup .form-group {
+  margin-bottom: 15px;
+}
+
+/* Inputs & Select */
+.ue-dark-popup input,
+.ue-dark-popup select {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  color: #ffffff;
+  padding: 10px 5px;
+  font-size: 14px;
+}
+
+.ue-dark-popup input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.ue-dark-popup select {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.ue-dark-popup select option {
+  color: #000;
+}
+
+/* Focus effect */
+.ue-dark-popup input:focus,
+.ue-dark-popup select:focus {
+  outline: none;
+  border-bottom-color: #f5c542;
+}
+
+/* Submit Button */
+.ue-dark-popup .light-modal-btn {
+  width: 100%;
+  background: transparent;
+  border: 1px solid #f5c542;
+  color: #f5c542;
+  padding: 12px;
+  margin-top: 15px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+.ue-dark-popup .light-modal-btn:hover {
+  background: #f5c542;
+  color: #0b1c2d;
+}
+
+/* Close button visibility */
+.modal-header .btn-close {
+  filter: invert(1);
+}
+
+#virtualTourModal .modal-body {
+  padding: 0;
+}
+
+#virtualTourModal .col-md-6 {
+  padding: 0;
+}
+
+.modal-Img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
