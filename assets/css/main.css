@@ -19085,25 +19085,15 @@ li i {
 }
 
 /* ===============================
-   Dark Blue Popup Form (Isolated)
+   Dark Blue Popup Form
 ================================= */
 
 .ue-dark-popup {
   background: #0b1c2d;
-  /* dark navy */
   padding: 10px 15px;
-  margin-left: 4px;
-  /* border-radius: 6px; */
-}
-
-@media(max-width:991px) {
-  .ue-dark-popup {
-    margin-left: 0px;
-  }
 }
 
 
-/* Heading */
 .ue-dark-popup .newsletter-title {
   color: #ffffff;
   font-size: 22px;
@@ -19117,16 +19107,13 @@ li i {
   width: 50px;
   height: 2px;
   background: #f5c542;
-  /* yellow accent */
   margin: 10px auto 0;
 }
 
-/* Form groups */
 .ue-dark-popup .form-group {
   margin-bottom: 15px;
 }
 
-/* Inputs & Select */
 .ue-dark-popup input,
 .ue-dark-popup select {
   width: 100%;
@@ -19231,17 +19218,14 @@ li i {
 /* Enquire button */
 .mobile-cta .cta-enquire {
   background: linear-gradient(135deg, #b80505, #000000);
-  /* yellow */
   color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.12);
 }
 
-/* hover effect */
 .mobile-cta .cta-btn:hover {
   transform: translateY(-2px);
 }
 
-/* click effect */
 .mobile-cta .cta-btn:active {
   transform: scale(0.98);
 }
@@ -19251,4 +19235,8 @@ li i {
   .mobile-cta {
     display: none !important;
   }
+}
+
+.bg-color {
+  background-color: #0b1c2d;
 }
