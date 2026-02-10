@@ -19240,3 +19240,34 @@ li i {
 .bg-color {
   background-color: #0b1c2d;
 }
+
+.modal-form .modal-content {
+  border-radius: 20px;
+  overflow: hidden;
+  border: none;
+}
+
+/* Body */
+.modal-form .modal-body {
+  padding: 0;
+}
+
+.modal-form .modal-Img {
+  border-radius: 20px 0 0 20px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.modal-form .ue-dark-popup {
+  border-radius: 0 20px 20px 0;
+}
+
+@media (max-width: 767px) {
+  .modal-form .modal-Img {
+    border-radius: 20px 20px 0 0;
+  }
+
+  .modal-form .ue-dark-popup {
+    border-radius: 0 0 20px 20px;
+  }
+}
